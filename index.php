@@ -1,3 +1,6 @@
+<?php
+include("connect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +31,6 @@
         </thead>
         <tbody>
 <?php
-include("connect.php");
-
 $sql = "SELECT * FROM users";
 $res = mysqli_query($conn, $sql);
 
